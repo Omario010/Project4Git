@@ -1,5 +1,1 @@
-<?php
-
-hoihoinab
-echo"hallo";
-?>
+jjhuhuihihihuihuihuihuihuihuihihuh
