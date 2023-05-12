@@ -2,6 +2,6 @@
 
 
 echo 'hallo';
-echo "hallo 02"
+echo "hallo 02";
 juu
 ?>
