@@ -38,13 +38,13 @@ CREATE TABLE `anime` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `studenten`
+-- Gegevens worden geëxporteerd voor tabel `anime`
 --
 
-INSERT INTO `studenten` (`studentid`, `opleiding`, `naam`, `postcode`) VALUES
-                                                                           (1, 'netwerken', 'Dik Vuik', '3012VF'),
-                                                                           (3, 'Bank en verzekeren', 'Martin Visser', '2022BN'),
-                                                                           (99, 'software developer', 'Juliana Blokland', '3030tR');
+INSERT INTO `anime` (`Anime_id`, `AnimeNaam`, `Datum`, `Tijdsduur`, `Leeftijd`, `karakter`) VALUES
+                                                                           (1, 'Naruto', '21-9-1999', '30', '12' , 'Fantasy'),
+                                                                           (10, 'Death note', '5-2003', '30', '12' , 'Mystery'),
+                                                                           (20, 'saiki', '04-8-2013', '24', '12' , 'Comedy');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -53,8 +53,8 @@ INSERT INTO `studenten` (`studentid`, `opleiding`, `naam`, `postcode`) VALUES
 --
 -- Indexen voor tabel `studenten`
 --
-ALTER TABLE `studenten`
-    ADD PRIMARY KEY (`studentid`);
+ALTER TABLE `anime`
+    ADD PRIMARY KEY (`Anime_id`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
@@ -63,8 +63,8 @@ ALTER TABLE `studenten`
 --
 -- AUTO_INCREMENT voor een tabel `studenten`
 --
-ALTER TABLE `studenten`
-    MODIFY `studentid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+ALTER TABLE `anime`
+    MODIFY `Anime_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
