@@ -1,5 +1,5 @@
 <?php
-class Klant
+class klant
 {
     // properties - eigenschappen ---------------------
     protected $naam;

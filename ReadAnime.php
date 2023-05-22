@@ -5,11 +5,11 @@
 </head>
 <body>
 <h1>afdrukken anime</h1>
-<p>Dit zijn alle gegevens uit de animetabel.</p>
+<p>Dit zijn alle gegevens uit de anime tabel.</p>
 
 <?php
 require "Anime.php";    // nodig om object te maken
-$anime1 = new Anime();
+$anime1 = new anime();
 $anime1->readAnime();
 ?>
 
