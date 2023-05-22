@@ -1,31 +1,31 @@
 <?php
 require "Klant.php";
 
-class Anime extends Klant
+class Anime extends klant
 {
     // properties - eigenschappen -----------------------------------------
-    protected $opleiding;
+    protected $anime;
     // $naam en $postcode worden geërfd van Persoon
 
     // methoden - functies ------------------------------------------------
     // constructor
-    public function __construct($opleiding=NULL, $naam=NULL, $postcode=NULL)
+    public function __construct($anime=NULL, $naam=NULL, $postcode=NULL)
     {
-        $this->opleiding=$opleiding;
+        $this->anime=$anime;
         $this->naam=$naam;
         $this->postcode=$postcode;
     }
     // setters
-    public function set_opleiding($opleiding)
+    public function set_anime($anime)
     {
-        $this->opleiding=$opleiding;
+        $this->anime=$anime;
     }
     // set_naam() en set_postcode worden geërfd van Persoon
 
     // getters
-    public function get_opleiding()
+    public function get_anime()
     {
-        return $this->opleiding;
+        return $this->anime;
     }
     // get_naam() en get_postcode worden geërfd van Persoon
 
@@ -34,37 +34,37 @@ class Anime extends Klant
     {
         echo "Mijn naam is ".$this->get_naam()
             .", ik doe de opleiding "
-            .$this->get_opleiding()
+            .$this->get_anime()
             .". Mijn postcode is ".$this->get_postcode();
     }
-    public function afdrukkenStudent()
+    public function afdrukkenKlant()
     {
         echo $this->get_naam();
         echo "<br/>";
         echo $this->get_postcode();
         echo "<br/>";
-        echo $this->get_opleiding();
+        echo $this->get_anime();
         echo "<br/><br/>";
     }
     // crud methoden ------------------------------------------------------
-    public function createStudent()		// gegevens in de database zetten
+    public function createKlant()		// gegevens in de database zetten
     {
-        require "schoolConnect.php";
+        require "FilmsConnect.php";
         // gegevens uit het object in variabelen zetten
         $studentid = NULL; 				// zit niet in het object
         $naam =      $this->get_naam();
         $postcode =  $this->get_postcode();
-        $opleiding = $this->get_opleiding();
+        $anime = $this->get_anime();
 
         // statement maken voor invoer in de tabel
         $sql = $conn->prepare
         ("
 				insert into studenten values
-				(:studentid, :opleiding, :naam, :postcode)
+				(:studentid, :anime, :naam, :postcode)
 			");
         // variabelen in de statement zetten
         $sql->bindParam(":studentid", $studentid);
-        $sql->bindParam(":opleiding", $opleiding);
+        $sql->bindParam(":anime", $anime);
         $sql->bindParam(":naam", 	  $naam);
         $sql->bindParam(":postcode",  $postcode);
         $sql->execute();
@@ -72,52 +72,52 @@ class Anime extends Klant
         echo "Deze student is toegevoegd: <br/>";
 
     }
-    public function readStudent()
+    public function readAnime()
     {
-        require "schoolConnect.php";
+        require "FilmsConnect.php";
         // statement maken
         $sql = $conn->prepare("
-									select studentid, opleiding, naam, postcode 
-									from studenten  
+									select studentid, anime, naam, postcode 
+									from klanten  
 								 ");
         $sql->execute();
-        foreach($sql as $student)
+        foreach($sql as $klant)
         {
             // gegevens uit de array in het object stoppen
             // en gelijk afdrukken
-            echo $student["studentid"]. " - ";		// geen eigenschap van object
-            echo $this->naam=$student["naam"]. " - ";
-            echo $this->opleiding=$student["opleiding"]. " - ";
-            echo $this->postcode=$student["postcode"]. "<br/>";
+            echo $klant["studentid"]. " - ";		// geen eigenschap van object
+            echo $this->naam=$klant["naam"]. " - ";
+            echo $this->anime=$klant["anime"]. " - ";
+            echo $this->postcode=$klant["postcode"]. "<br/>";
         }
     }
     public function updateStudent($studentid)
     {
-        require "schoolConnect.php";
+        require "FilmsConnect.php";
         // gegevens uit het object in variabelen zetten
         $studentid;
         $naam 		= $this->get_naam();
         $postcode 	= $this->get_postcode();
-        $opleiding 	= $this->get_opleiding();
+        $opleiding 	= $this->get_anime();
         // statement maken
         $sql = $conn->prepare("
-									update studenten
-									set opleiding=:opleiding, naam=:naam, postcode=:postcode
+									update klanten
+									set anime=:anime, naam=:naam, postcode=:postcode
 									where studentid=:studentid
 								 ");
         // variabelen in de statement zetten
         $sql->bindParam(":studentid", $studentid);
-        $sql->bindParam(":opleiding", $opleiding);
+        $sql->bindParam(":anime", $anime);
         $sql->bindParam(":naam", $naam);
         $sql->bindParam(":postcode", $postcode);
         $sql->execute();
     }
     public function deleteStudent($studentid)
     {
-        require "schoolConnect.php";
+        require "FilmsConnect.php";
         // statement maken
         $sql = $conn->prepare("
-									delete from studenten
+									delete from klanten
 									where studentid = :studentid
 								 ");
         // variabele in de statement zetten
@@ -126,11 +126,11 @@ class Anime extends Klant
     }
     public function searchStudent($studentid)
     {
-        require "schoolConnect.php";
+        require "FilmsConnect.php";
 
         // statement maken
         $sql = $conn->prepare("
-									select studentid, opleiding, naam, postcode
+									select studentid, anime, naam, postcode
 									from studenten
 									where studentid = :studentid			
 								 ");
@@ -139,11 +139,11 @@ class Anime extends Klant
         $sql->execute();
 
         // gegevens uit de array in het object stoppen
-        foreach($sql as $student)
+        foreach($sql as $klant)
         {
             //echo $student["studentid"]. "<br/>";		// geen eigenschap van object
             $this->naam=$student["naam"];
-            $this->opleiding=$student["opleiding"];
+            $this->anime=$student["anime"];
             $this->postcode=$student["postcode"];
         }
     }
