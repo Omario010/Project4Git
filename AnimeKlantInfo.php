@@ -5,7 +5,9 @@ require "Anime.php";
 class AnimeKlantInfo extends Anime
 {
     // properties - eigenschappen -----------------------------------------
-    protected $opleiding;
+    protected $Lijst;
+    protected $GekekenDatum;
+    protected $GekekenTijd;
     // $naam en $postcode worden geërfd van Persoon
 
     // methoden - functies ------------------------------------------------
