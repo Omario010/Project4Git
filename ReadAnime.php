@@ -8,7 +8,7 @@
 <p>Dit zijn alle gegevens uit de anime tabel.</p>
 
 <?php
-require "Anime.php";    // nodig om object te maken
+require "AnimeKlantInfo.php";    // nodig om object te maken
 $anime1 = new anime();
 $anime1->readAnime();
 ?>

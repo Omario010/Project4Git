@@ -44,7 +44,7 @@ CREATE TABLE `anime` (
 INSERT INTO `anime` (`Anime_id`, `AnimeNaam`, `Datum`, `Tijdsduur`, `Leeftijd`, `karakter`) VALUES
                                                                            (1, 'Naruto', '21-9-1999', '30', '12' , 'Fantasy'),
                                                                            (10, 'Death note', '5-2003', '30', '12' , 'Mystery'),
-                                                                           (20, 'saiki', '04-8-2013', '24', '12' , 'Comedy');
+                                                                           (20, 'Saiki', '04-8-2013', '24', '12' , 'Comedy');
 
 --
 -- Indexen voor geëxporteerde tabellen
