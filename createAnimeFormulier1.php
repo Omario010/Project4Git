@@ -1,6 +1,6 @@
 <!doctype html>
-<html>
-<!-- Anjo Eijeriks -->
+<html lang="en">
+
 <head>
     <title>create student formulier 1</title>
 </head>
