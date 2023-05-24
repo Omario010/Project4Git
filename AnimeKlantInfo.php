@@ -12,43 +12,56 @@ class AnimeKlantInfo extends Anime
 
     // methoden - functies ------------------------------------------------
     // constructor
-    public function __construct($opleiding = NULL, $naam = NULL, $postcode = NULL)
+    public function __construct($Lijst = NULL, $GekekenDatum = NULL, $GekekenTijd = NULL)
     {
-        $this->opleiding = $opleiding;
-        $this->naam = $naam;
-        $this->postcode = $postcode;
+        $this->Lijst = $Lijst;
+        $this->GekekenDatum = $GekekenDatum;
+        $this->GekekenTijd = $GekekenTijd;
     }
 
     // setters
-    public function set_opleiding($opleiding)
+    public function set_GekekenDatum($GekekenDatum)
     {
-        $this->opleiding = $opleiding;
+        $this->GekekenDatum = $GekekenDatum;
     }
     // set_naam() en set_postcode worden geërfd van Persoon
 
     // getters
-    public function get_opleiding()
+    public function get_GekekenDatum()
     {
-        return $this->opleiding;
+        return $this->GekekenDatum;
+    }
+
+    // setters
+    public function set_GekekenTijd($GekekenTijd)
+    {
+        $this->GekekenTijd = $GekekenTijd;
+    }
+    // set_naam() en set_postcode worden geërfd van Persoon
+
+    // getters
+    public function get_GekekenTijd()
+    {
+        return $this->GekekenTijd;
     }
     // get_naam() en get_postcode worden geërfd van Persoon
 
     // methoden om gegevens af te drukken ---------------------------------
     public function voorstellen()
     {
-        echo "Mijn naam is " . $this->get_naam()
-            . ", ik doe de opleiding "
-            . $this->get_opleiding()
-            . ". Mijn postcode is " . $this->get_postcode();
+        echo "De anime die ik heb gekeken is" . $this->get_AnimeNaam()
+            . ", De datum dat ik het heb gekeken is"
+            . $this->get_GekekenDatum()
+            . ". En de tijd is" . $this->get_GekekenTijd();
     }
 
-    public function afdrukkenStudent()
+    public function afdrukkenAnimeKlantInfo()
     {
-        echo $this->get_naam();
+        echo $this->get_AnimeNaam();
         echo "<br/>";
-        echo $this->get_postcode();
+        echo $this->get_GekekenDatum();
         echo "<br/>";
-        echo $this->get_opleiding();
+        echo $this->get_GekekenTijd();
         echo "<br/><br/>";
     }
 
@@ -57,25 +70,25 @@ class AnimeKlantInfo extends Anime
     {
         require "FilmsConnect.php";
         // gegevens uit het object in variabelen zetten
-        $studentid = NULL;                // zit niet in het object
-        $naam = $this->get_naam();
-        $postcode = $this->get_postcode();
-        $opleiding = $this->get_opleiding();
+        $Anime_id = NULL;                // zit niet in het object
+        $AnimeNaam = $this->get_AnimeNaam();
+        $GekekenDatum = $this->get_GekekenDatum();
+        $GekekenTijd = $this->get_GekekenTijd();
 
         // statement maken voor invoer in de tabel
         $sql = $conn->prepare
         ("
-				insert into studenten values
-				(:studentid, :opleiding, :naam, :postcode)
+				insert into AnimeKlantInfo values
+				(:Anime_id, :AnimeNaam, :GekekenDatum, :GekekenTijd)
 			");
         // variabelen in de statement zetten
-        $sql->bindParam(":studentid", $studentid);
-        $sql->bindParam(":opleiding", $opleiding);
-        $sql->bindParam(":naam", $naam);
-        $sql->bindParam(":postcode", $postcode);
+        $sql->bindParam(":Anime_id", $Anime_id);
+        $sql->bindParam(":GekekenDatum", $GekekenDatum);
+        $sql->bindParam(":AnimeNaam", $AnimeNaam);
+        $sql->bindParam(":GekekenTijd", $GekekenTijd);
         $sql->execute();
         // melding
-        echo "Deze student is toegevoegd: <br/>";
+        echo "Deze AnimeKlantInfo is toegevoegd: <br/>";
 
     }
 
@@ -84,75 +97,75 @@ class AnimeKlantInfo extends Anime
         require "FilmsConnect.php";
         // statement maken
         $sql = $conn->prepare("
-									select studentid, opleiding, naam, postcode 
+									select Anime_id, GekekenDatum, AnimeNaam, GekekenTijd 
 									from AnimeKlantInfo  
 								 ");
         $sql->execute();
         foreach ($sql as $AnimeKlantInfo) {
             // gegevens uit de array in het object stoppen
             // en gelijk afdrukken
-            echo $AnimeKlantInfo["studentid"] . " - ";        // geen eigenschap van object
-            echo $this->naam = $AnimeKlantInfo["naam"] . " - ";
-            echo $this->opleiding = $AnimeKlantInfo["opleiding"] . " - ";
-            echo $this->postcode = $AnimeKlantInfo["postcode"] . "<br/>";
+            echo $AnimeKlantInfo["Anime_id"] . " - ";        // geen eigenschap van object
+            echo $this->AnimeNaam = $AnimeKlantInfo["AnimeNaam"] . " - ";
+            echo $this->GekekenDatum = $AnimeKlantInfo["GekekenDatum"] . " - ";
+            echo $this->GekekenTijd = $AnimeKlantInfo["GekekenTijd"] . "<br/>";
         }
     }
 
-    public function updateAnimeKlantInfo($studentid)
+    public function updateAnimeKlantInfo($Anime_id)
     {
         require "FilmsConnect.php";
         // gegevens uit het object in variabelen zetten
-        $studentid;
-        $naam = $this->get_naam();
-        $postcode = $this->get_postcode();
-        $opleiding = $this->get_opleiding();
+        $Anime_id;
+        $AnimeNaam = $this->get_AnimeNaam();
+        $GekekenDatum = $this->get_GekekenDatum();
+        $GekekenTijd = $this->get_GekekenTijd();
         // statement maken
         $sql = $conn->prepare("
-									update studenten
-									set opleiding=:opleiding, naam=:naam, postcode=:postcode
-									where studentid=:studentid
+									update AnimeKlantInfo
+									set GekekenDatum=:GekekenDatum, AnimeNaam=:AnimeNaam, GekekenTijd=:GekekenTijd
+									where Anime_id=:Anime_id
 								 ");
         // variabelen in de statement zetten
-        $sql->bindParam(":studentid", $studentid);
-        $sql->bindParam(":opleiding", $opleiding);
-        $sql->bindParam(":naam", $naam);
-        $sql->bindParam(":postcode", $postcode);
+        $sql->bindParam(":Anime_id", $Anime_id);
+        $sql->bindParam(":GekekenDatum", $GekekenDatum);
+        $sql->bindParam(":AnimeNaam", $AnimeNaam);
+        $sql->bindParam(":GekekenTijd", $GekekenTijd);
         $sql->execute();
     }
 
-    public function deleteStudent($studentid)
+    public function deleteAnimeKlantInfo($Anime_id)
     {
-        require "schoolConnect.php";
+        require "FilmsConnect.php";
         // statement maken
         $sql = $conn->prepare("
-									delete from studenten
-									where studentid = :studentid
+									delete from AnimeKlantInfo
+									where Anime_id = :Anime_id
 								 ");
         // variabele in de statement zetten
-        $sql->bindParam(":studentid", $studentid);
+        $sql->bindParam(":Anime_id", $Anime_id);
         $sql->execute();
     }
 
-    public function searchStudent($studentid)
+    public function searchAnimeKlantInfo($Anime_id)
     {
-        require "schoolConnect.php";
+        require "FilmsConnect.php";
 
         // statement maken
         $sql = $conn->prepare("
-									select studentid, opleiding, naam, postcode
-									from studenten
-									where studentid = :studentid			
+									select Anime_id, opleiding, AnimeNaam, GekekenTijd
+									from AnimeKlantInfo
+									where Anime_id = :Anime_id			
 								 ");
         // variabele in de stament zetten
-        $sql->bindParam(":studentid", $studentid);
+        $sql->bindParam(":Anime_id", $Anime_id);
         $sql->execute();
 
         // gegevens uit de array in het object stoppen
-        foreach ($sql as $student) {
+        foreach ($sql as $AnimeKlantInfo) {
             //echo $student["studentid"]. "<br/>";		// geen eigenschap van object
-            $this->naam = $student["naam"];
-            $this->opleiding = $student["opleiding"];
-            $this->postcode = $student["postcode"];
+            $this->AnimeNaam = $AnimeKlantInfo["AnimeNaam"];
+            $this->GekekenDatum = $AnimeKlantInfo["GekekenDatum"];
+            $this->GekekenTijd = $AnimeKlantInfo["GekekenTijd"];
         }
     }
 }
