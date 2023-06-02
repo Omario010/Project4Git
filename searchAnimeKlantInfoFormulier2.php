@@ -8,9 +8,9 @@
 <h1>search student formulier 2</h1>
 
 <?php
-// Anjo Eijeriks
-require "Student.php";			// nodig om object te maken
-require "schoolConnect.php";	// verbinding maken database
+
+require "AnimeKlantInfo.php";			// nodig om object te maken
+require "FilmsConnect.php";	// verbinding maken database
 
 // uitlezen vakje van searchStudentForm1 -------------------------
 $studentid = $_POST["studentIdVak"];

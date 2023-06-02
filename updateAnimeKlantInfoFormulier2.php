@@ -9,7 +9,7 @@
 
 <?php
 // Anjo Eijeriks
-require "Student.php";					// nodig om object te maken
+require "AnimeKlantInfo.php";					// nodig om object te maken
 $studentid = $_POST["studentIdVak"];	// uitlezen vakje van deleteStudentForm1
 $student1 = new Student();				// object aanmaken
 $student1->searchStudent($studentid);

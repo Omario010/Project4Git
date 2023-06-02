@@ -8,7 +8,7 @@
 <h1>update student formulier 3</h1>
 
 <?php
-require "Student.php";
+require "AnimeKlantInfo.php";
 
 // gegevens uit de array in variabelen stoppen
 $studentid = $_POST["studentIdVak"];
@@ -17,13 +17,13 @@ $postcode = $_POST["postcodeVak"];
 $opleiding = $_POST["opleidingVak"];
 
 // maken object ---------------------------------------------------
-$student1 = new Student($opleiding, $naam, $postcode); // maakt object
+$student1 = new AnimeKlantInfo($opleiding, $naam, $postcode); // maakt object
 $student1->updateStudent($studentid);		           // vervangt de tabelgegevens voor objectgegevens
 echo "Dit zijn de gewijzigde gegevens: <br/>";
 echo $studentid."<br/>";
 $student1->afdrukkenStudent();	                       // drukt object af
 
 ?>
-<a href="schoolmenu.php">Terug naar het hoofdmenu</a>
+<a href="Project4Menu.php">Terug naar het hoofdmenu</a>
 </body>
 </html>
