@@ -7,7 +7,7 @@
 <h1>delete student formulier 3</h1>
 
 <?php
-require "Student.php";
+require "AnimeKlantInfo.php";
 
 $studentid = $_POST["studentIdVak"];
 $verwijderen = $_POST["verwijderBox"];

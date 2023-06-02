@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>delete student formulier 2</title>
+		<title>delete anime formulier 2</title>
 	</head>
 	<body>
-		<h1>delete student formulier 2</h1>
+		<h1>delete anime formulier 2</h1>
 
 		<?php
 			// Anjo Eijeriks
-			require "Student.php";					// nodig om object te maken
-			$studentid = $_POST["studentIdVak"];	// uitlezen vakje van deleteStudentForm1
-			$student1 = new Student();				// object aanmaken
-			$student1->searchStudent($studentid);
-			$student1->afdrukkenStudent();
+			require "AnimeKlantInfo.php";					// nodig om object te maken
+			$studentid = $_POST["AnimeIdVak"];	// uitlezen vakje van deleteStudentForm1
+			$student1 = new AnimeKlantInfo();				// object aanmaken
+			$student1->searchAnimeKlantInfo($Anime_id);
+			$student1->afdrukkenAnimeKlantInfo();
 		?>
 
-		<form action="deleteStudentFormulier3.php" method="post">
+		<form action="deleteAnimeKlantInfoFormulier3.php" method="post">
 			<!-- $studentid mag niet meer gewijzigd worden -->
-			<input type="hidden" name="studentIdVak" value=" <?php echo $studentid ?> ">
+			<input type="hidden" name="studentIdVak" value=" <?php echo $Anime_id ?> ">
 			<!-- 2x verwijderBox om nee of ja door te kunnen geven -->
 			<input type="hidden" 	name="verwijderBox" value="nee">
 			<input type="checkbox" 	name="verwijderBox" value="ja">
@@ -25,5 +25,5 @@
 			<input type="submit"><br/><br/>
 		</form>
 
-		<a href="schoolmenu.php">Terug naar het hoofdmenu</a>
+		<a href="Project4Menu.php">Terug naar het hoofdmenu</a>
 	</body>
