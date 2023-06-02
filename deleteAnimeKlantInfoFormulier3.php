@@ -20,7 +20,7 @@ if ($verwijderen=="ja")
 }
 else
 {
-    echo "De student is niet verwijderd <br/>";
+    echo "De AnimeInfo is niet verwijderd <br/>";
 }
 ?>
 <a href="Project4Menu.php">Terug naar het hoofdmenu</a>

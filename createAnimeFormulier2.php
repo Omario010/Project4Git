@@ -12,13 +12,13 @@ require "AnimeKlantInfo.php";			// nodig om object te maken
 require "FilmsConnect.php";	// verbinding maken database
 
 // uitlezen vakjes van createStudentForm1 -------------------------
-$studentid = NULL;				// komt niet uit het formulier (auto increment)
-$naam =      $_POST["naamvak"];
-$postcode =  $_POST["postcodevak"];
-$opleiding = $_POST["opleidingvak"];
+$Anime_id = NULL;				// komt niet uit het formulier (auto increment)
+$AnimeNaam =      $_POST["AnimeNaamvak"];
+$GekekenTijd =  $_POST["GekekenDatumvak"];
+$GekekenDatum = $_POST["GekekenTijdvak"];
 
 // maken object ---------------------------------------------------
-$student1 = new AnimeKlantInfo($opleiding, $naam, $postcode); // maakt object
+$student1 = new AnimeKlantInfo($GekekenDatum, $AnimeNaam, $GekekenTijd); // maakt object
 $student1->createAnimeKlantInfo();		// zet het object in de tabel
 $student1->afdrukkenAnimeKlantInfo();	// drukt objectgegevens af
 ?>
