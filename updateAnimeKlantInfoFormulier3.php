@@ -18,10 +18,10 @@ $opleiding = $_POST["opleidingVak"];
 
 // maken object ---------------------------------------------------
 $student1 = new AnimeKlantInfo($opleiding, $naam, $postcode); // maakt object
-$student1->updateStudent($studentid);		           // vervangt de tabelgegevens voor objectgegevens
+$student1->updateAnimeKlantInfo($studentid);		           // vervangt de tabelgegevens voor objectgegevens
 echo "Dit zijn de gewijzigde gegevens: <br/>";
 echo $studentid."<br/>";
-$student1->afdrukkenStudent();	                       // drukt object af
+$student1->afdrukkenAnimeKlantInfo();	                       // drukt object af
 
 ?>
 <a href="Project4Menu.php">Terug naar het hoofdmenu</a>

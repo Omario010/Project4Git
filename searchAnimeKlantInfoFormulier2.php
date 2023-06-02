@@ -19,6 +19,6 @@ $student1->searchStudent($studentid);
 $student1->afdrukkenStudent();
 ?>
 
-<a href="schoolmenu.php">Terug naar het hoofdmenu</a>
+<a href="Project4Menu.php">Terug naar het hoofdmenu</a>
 </body>
 </html>
