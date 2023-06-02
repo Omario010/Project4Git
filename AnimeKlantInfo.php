@@ -162,7 +162,7 @@ class AnimeKlantInfo extends Anime
 
         // gegevens uit de array in het object stoppen
         foreach ($sql as $AnimeKlantInfo) {
-            //echo $student["studentid"]. "<br/>";		// geen eigenschap van object
+            //echo $animeklantinfo["anime_id"]. "<br/>";		// geen eigenschap van object
             $this->AnimeNaam = $AnimeKlantInfo["AnimeNaam"];
             $this->GekekenDatum = $AnimeKlantInfo["GekekenDatum"];
             $this->GekekenTijd = $AnimeKlantInfo["GekekenTijd"];

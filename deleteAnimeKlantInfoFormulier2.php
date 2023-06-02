@@ -7,7 +7,7 @@
 		<h1>delete anime formulier 2</h1>
 
 		<?php
-			// Anjo Eijeriks
+
 			require "AnimeKlantInfo.php";					// nodig om object te maken
 			$studentid = $_POST["AnimeIdVak"];	// uitlezen vakje van deleteStudentForm1
 			$student1 = new AnimeKlantInfo();				// object aanmaken

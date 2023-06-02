@@ -10,22 +10,22 @@
 <?php
 
 require "AnimeKlantInfo.php";					// nodig om object te maken
-$studentid = $_POST["studentIdVak"];	// uitlezen vakje van deleteStudentForm1
-$student1 = new AnimeKlantInfo();				// object aanmaken
-$student1->searchStudent($studentid);
+$Anime_id = $_POST["animeIdVak"];	// uitlezen vakje van deleteStudentForm1
+$anime1 = new AnimeKlantInfo();				// object aanmaken
+$anime1->searchAnimeKlantInfo($Anime_id);
 // properties in variabelen zetten
-$naam=$student1->get_naam();
-$postcode=$student1->get_postcode();
-$opleiding=$student1->get_opleiding();
+$AnimeNaam=$anime1->get_AnimeNaam();
+$GekekenDatum=$anime1->get_GekekenDatum();
+$GekekenTijd=$anime1->get_GekekenTijd();
 ?>
 
-<form action="updateAnimeKlantInfoFormulier3.php.php" method="post">
+<form action="updateAnimeKlantInfoFormulier3.php" method="post">
     <!-- $studentid mag niet meer gewijzigd worden -->
-    <?php echo $studentid ?>
-    <input type="hidden" name="studentIdVak" value="<?php echo $studentid; ?> "><br/>
-    <input type="text"   name="naamVak"      value="<?php echo $naam;      ?> "><br/>
-    <input type="text"   name="postcodeVak"  value="<?php echo $postcode;  ?> "><br/>
-    <input type="text"   name="opleidingVak" value="<?php echo $opleiding; ?> "><br/><br/>
+    <?php echo $Anime_id ?>
+    <input type="hidden" name="animeIdVak" value="<?php echo $Anime_id; ?> "><br/>
+    <input type="text"   name="animeNaamVak"      value="<?php echo $AnimeNaam;      ?> "><br/>
+    <input type="text"   name="gekekenDatumVak"  value="<?php echo $GekekenDatum;  ?> "><br/>
+    <input type="text"   name="gekekenTijdVak" value="<?php echo $GekekenTijd; ?> "><br/><br/>
     <input type="submit"><br/><br/>
 </form>
 

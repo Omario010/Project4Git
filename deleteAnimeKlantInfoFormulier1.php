@@ -10,7 +10,7 @@
     <input type="text" id = "studentid" name="studentIdVak">
     <input type="submit">
 </form>
-<a href="schoolmenu.php"><br/>Terug naar het hoofdmenu</a>
+<a href="Project4Menu.php"><br/>Terug naar het hoofdmenu</a>
 </body>
 
 

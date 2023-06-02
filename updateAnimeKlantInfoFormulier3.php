@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>update student formulier 3</title>
+    <title>update anime formulier 3</title>
 </head>
 <body>
-<h1>update student formulier 3</h1>
+<h1>update anime formulier 3</h1>
 
 <?php
 require "AnimeKlantInfo.php";
 
 // gegevens uit de array in variabelen stoppen
-$studentid = $_POST["studentIdVak"];
-$naam = $_POST["naamVak"];
-$postcode = $_POST["postcodeVak"];
-$opleiding = $_POST["opleidingVak"];
+$Anime_id = $_POST["AnimeIdVak"];
+$AnimeNaam = $_POST["AnimeNaamVak"];
+$GekekenDatum = $_POST["GekekenDatumVak"];
+$GekekenTijd = $_POST["GekekenTijdVak"];
 
 // maken object ---------------------------------------------------
-$student1 = new AnimeKlantInfo($opleiding, $naam, $postcode); // maakt object
-$student1->updateAnimeKlantInfo($studentid);		           // vervangt de tabelgegevens voor objectgegevens
+$anime1 = new AnimeKlantInfo($Anime_id, $GekekenDatum, $GekekenTijd); // maakt object
+$anime1->updateAnimeKlantInfo($Anime_id);		           // vervangt de tabelgegevens voor objectgegevens
 echo "Dit zijn de gewijzigde gegevens: <br/>";
-echo $studentid."<br/>";
-$student1->afdrukkenAnimeKlantInfo();	                       // drukt object af
+echo $Anime_id."<br/>";
+$anime1->afdrukkenAnimeKlantInfo();	                       // drukt object af
 
 ?>
 <a href="Project4Menu.php">Terug naar het hoofdmenu</a>
