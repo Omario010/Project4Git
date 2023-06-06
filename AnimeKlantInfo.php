@@ -24,7 +24,6 @@ class AnimeKlantInfo extends Anime
     {
         $this->GekekenDatum = $GekekenDatum;
     }
-    // set_naam() en set_postcode worden geërfd van Persoon
 
     // getters
     public function get_GekekenDatum()
@@ -37,14 +36,13 @@ class AnimeKlantInfo extends Anime
     {
         $this->GekekenTijd = $GekekenTijd;
     }
-    // set_naam() en set_postcode worden geërfd van Persoon
+
 
     // getters
     public function get_GekekenTijd()
     {
         return $this->GekekenTijd;
     }
-    // get_naam() en get_postcode worden geërfd van Persoon
 
     // methoden om gegevens af te drukken ---------------------------------
     public function voorstellen()
