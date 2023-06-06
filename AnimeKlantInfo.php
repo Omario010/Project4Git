@@ -109,25 +109,25 @@ class AnimeKlantInfo extends Anime
         }
     }
 
-    public function updateAnimeKlantInfo($Anime_id)
+    public function updateAnimeKlantInfo($anime_id)
     {
         require "FilmsConnect.php";
         // gegevens uit het object in variabelen zetten
-        $Anime_id;
-        $AnimeNaam = $this->get_AnimeNaam();
-        $GekekenDatum = $this->get_GekekenDatum();
-        $GekekenTijd = $this->get_GekekenTijd();
+        $anime_id;
+        $animeNaam = $this->get_AnimeNaam();
+        $gekekenDatum = $this->get_GekekenDatum();
+        $gekekenTijd = $this->get_GekekenTijd();
         // statement maken
         $sql = $conn->prepare("
 									update AnimeKlantInfo
-									set GekekenDatum=:GekekenDatum, AnimeNaam=:AnimeNaam, GekekenTijd=:GekekenTijd
+									set gekekenDatum=:gekekenDatum, animeNaam=:animeNaam, gekekenTijd=:gekekenTijd
 									where Anime_id=:Anime_id
 								 ");
         // variabelen in de statement zetten
-        $sql->bindParam(":Anime_id", $Anime_id);
-        $sql->bindParam(":GekekenDatum", $GekekenDatum);
-        $sql->bindParam(":AnimeNaam", $AnimeNaam);
-        $sql->bindParam(":GekekenTijd", $GekekenTijd);
+        $sql->bindParam(":Anime_id", $anime_id);
+        $sql->bindParam(":gekekenDatum", $gekekenDatum);
+        $sql->bindParam(":animeNaam", $animeNaam);
+        $sql->bindParam(":gekekenTijd", $gekekenTijd);
         $sql->execute();
     }
 
