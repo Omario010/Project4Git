@@ -6,7 +6,7 @@
 <body>
 <h1>delete student formulier 1</h1>
 <form action="deleteAnimeKlantInfoFormulier2.php" method="post">
-    <label for="Anime_id">Animetid:</label>
+    <label for="Anime_id">Anime_id:</label>
     <input type="text" id = "Anime_id" name="animeIdVak">
     <input type="submit">
 </form>
