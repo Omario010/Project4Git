@@ -1,0 +1,104 @@
+.logohoofd{
+    margin-top:-339px;
+}
+
+.welkom{
+    text-align: center;
+    color:rgba(127, 216, 88, 0.85);
+    margin-top:50px;
+    font-size: x-large;
+}
+
+nav{
+    
+    border: 2px solid rgba(127, 216, 88, 0.85); 
+    width:240px;
+    text-align: center;
+    padding: 39px;
+    background-color: rgba(127, 216, 88, 0.85); 
+    margin-left: 790px;
+    margin-top:80px;
+    list-style-type: none;
+    font-size:larger;
+}
+
+body{
+    background-color: rgb(0, 5, 67);
+}
+
+a{
+    border: 2px solid rgb(0, 5, 67);
+    
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0px;
+    font-size: 0.9em;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content-table th{
+    background-color: rgba(127, 216, 88, 0.85);
+    color: #ffffff;
+    text-align:left ;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+} 
+
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: rgba(172, 250, 138, 0.85);
+} 
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgba(127, 216, 88, 0.85);
+}
+
+tr{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.kikker1{
+    margin-top:-530px;
+}
+
+
+.formAanmeld{
+    
+    
+        border: 2px solid rgba(127, 216, 88, 0.85); 
+        width:240px;
+        text-align: center;
+        padding: 39px;
+        background-color: rgba(127, 216, 88, 0.85); 
+        margin-left: 790px;
+        margin-top:80px;
+        list-style-type: none;
+        font-size:larger;
+    
+}
+
+.h1formAanmeld{
+    color: rgba(127, 216, 88, 0.85);
+    text-align: center;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
