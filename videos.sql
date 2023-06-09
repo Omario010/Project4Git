@@ -46,7 +46,7 @@ INSERT INTO `anime` (`Anime_id`, `AnimeNaam`, 'link') VALUES
 --
 
 --
--- Indexes for table `videos`
+-- Indexes for table `anime`
 --
 ALTER TABLE `anime`
   ADD PRIMARY KEY (`Anime_id`);
