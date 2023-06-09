@@ -38,7 +38,7 @@ if (!$connect)
             exit;
         }
 
-        // Display the number of recirds found
+        // Display the number of records found
         echo '<p>The query found ' . mysqli_num_rows($result) . ' rows:</p>';
 
         // Loop through the records found
