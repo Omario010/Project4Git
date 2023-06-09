@@ -13,7 +13,7 @@ if (!$connect)
 
 ?>
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>PHP, MySQL, and YouTube Videos</title>
     </head>
@@ -24,9 +24,9 @@ if (!$connect)
         <?php
 
         // Create a query
-        $query = 'SELECT id,name,youtubeId
-            FROM videos
-            ORDER BY name';
+        $query = 'SELECT Anime_id, AnimeNaam,link
+            FROM anime
+            ORDER BY AnimeNaam';
 
         // Execute the query
         $result = mysqli_query($connect, $query);
@@ -48,15 +48,15 @@ if (!$connect)
             // Output the record using if statements and echo
             echo '<hr>';
 
-            echo '<h2>'.$record['name'].'</h2>';
+            echo '<h2>'.$record['AnimeNaam'].'</h2>';
 
-            $url = 'https://www.youtube.com/watch?v='.$record['youtubeId'];
+            $url = 'https://www.youtube.com/watch?v='.$record['link'];
 
             echo '<a href="'.$url.'">'.$url.'</a>';
 
             echo '<br><br>';
 
-            echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$record['youtubeId'].'?modestbranding=1" 
+            echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$record['link'].'?modestbranding=1" 
                 rameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>';
 

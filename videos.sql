@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sandbox`
+-- Database: `project4`
 --
 
 -- --------------------------------------------------------
@@ -26,20 +26,20 @@ SET time_zone = "+00:00";
 -- Table structure for table `videos`
 --
 
-CREATE TABLE `videos` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `youtubeId` varchar(11) NOT NULL
+CREATE TABLE `anime` (
+  `Anime_id` int(11) NOT NULL,
+  `AnimeNaam` varchar(100) NOT NULL,
+  `link` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `videos`
 --
 
-INSERT INTO `videos` (`id`, `name`, `youtubeId`) VALUES
-(1, 'Creating a PHP Contact Form', 'rcavhYK_6Xw'),
-(2, 'Displaying Images from a MySQL Database using PHP', 'OSggIY1-F1U'),
-(3, 'Creating Custom PHP Functions', 'ZGyXBm37yCw');
+INSERT INTO `anime` (`Anime_id`, `AnimeNaam`, 'link') VALUES
+                                                   (0, 'Naruto','QczGoCmX-pI'),
+                                                   (10, 'Death note','NlJZ-YgAt-c'),
+                                                   (20, 'Saiki','sbw7QB6nrTc');
 
 --
 -- Indexes for dumped tables
@@ -48,8 +48,8 @@ INSERT INTO `videos` (`id`, `name`, `youtubeId`) VALUES
 --
 -- Indexes for table `videos`
 --
-ALTER TABLE `videos`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `anime`
+  ADD PRIMARY KEY (`Anime_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -58,8 +58,8 @@ ALTER TABLE `videos`
 --
 -- AUTO_INCREMENT for table `videos`
 --
-ALTER TABLE `videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `anime`
+  MODIFY `Anime_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

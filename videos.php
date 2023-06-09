@@ -1,7 +1,7 @@
 <?php
 
 // Connect to the MySQL database
-$connect = mysqli_connect('localhost', 'root', 'root', 'sandbox');
+$connect = mysqli_connect('localhost', 'root', 'root', 'project4');
 
 // If the connection did not work, display an error message
 if (!$connect) 
@@ -24,9 +24,9 @@ if (!$connect)
         <?php
 
         // Create a query
-        $query = 'SELECT id,name,youtubeId
-            FROM videos
-            ORDER BY name';
+        $query = 'SELECT Anime_id,AnimeNaam,link
+            FROM anime
+            ORDER BY AnimeNaam';
 
         // Execute the query
         $result = mysqli_query($connect, $query);
