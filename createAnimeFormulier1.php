@@ -7,11 +7,11 @@
 <body>
 <h1>create anime formulier 1</h1>
 <form action="createAnimeFormulier2.php" method="post">
-    <label for="AnimeNaamvak">AnimeNaam:</label>
+    <label for="AnimeNaamvak">animeNaam:</label>
     <input type="text" id = "AnimeNaamvak" name="AnimeNaamvak"><br/>
-    <label for="GekekenAnimeTijdvak">GekekenAnimeTijd:</label>
+    <label for="GekekenAnimeTijdvak">gekekenAnimeTijd:</label>
     <input type="text" id = "GekekenAnimeTijdvak" name="GekekenAnimeTijdvak"><br/>
-    <label for="GekekenAnimeDatumvak">GekekenAnimeDatum:</label>
+    <label for="GekekenAnimeDatumvak">gekekenAnimeDatum:</label>
     <input type="text" id = "GekekenAnimeDatumvak" name="GekekenAnimeDatumvak"><br/>
     <input type="submit">
 </form>

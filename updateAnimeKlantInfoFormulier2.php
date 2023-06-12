@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>update student formulier 2</title>
+    <title>update anime formulier 2</title>
 </head>
 <body>
-<h1>update student formulier 2</h1>
+<h1>update anime formulier 2</h1>
 
 <?php
 

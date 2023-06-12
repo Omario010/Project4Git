@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>create student formulier 2</title>
+    <title>create anime formulier 2</title>
 </head>
 <body>
-<h1>create student formulier 2</h1>
+<h1>create anime formulier 2</h1>
 
 <?php
 require "AnimeKlantInfo.php";			// nodig om object te maken
