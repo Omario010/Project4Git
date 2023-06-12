@@ -13,7 +13,7 @@ if (!$connect)
 
 ?>
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>Anime</title>
     </head>
