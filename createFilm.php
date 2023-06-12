@@ -10,8 +10,8 @@
 	$film1->set_filmDatum("");
 	$film1->set_filmTijdsduur("");
 	$film1->set_filmGrene("");
-	$fil1m1->set_filmTijdsduur("");
-	$fil1m1->set_filmOmschrijving("");
+	$film1->set_filmTijdsduur("");
+	$film1->set_filmOmschrijving("");
 	
 	
 	
