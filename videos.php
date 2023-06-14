@@ -1,7 +1,7 @@
 <?php
 
 // Connect to the MySQL database
-$connect = mysqli_connect('localhost', 'root', 'root', 'project4');
+$connect = mysqli_connect('localhost', 'root', '', 'project4');
 
 // If the connection did not work, display an error message
 if (!$connect) 
