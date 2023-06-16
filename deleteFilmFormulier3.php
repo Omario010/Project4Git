@@ -32,7 +32,7 @@
 <li><a class="active" href="home.php">Home</a></li>
 </ul>
     <title>delete film formulier 3</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styler.css">
     </head>
     <body>
     <h1>delete film formulier 3</h1>
