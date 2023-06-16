@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="styler.css">
     </head>
     <body>
-        <h1>read film formulier</h1>
+        <h1>lezen film formulier</h1>
         <p>Alle gegevens van alle films: </p>
         <?php
             require "Film.php";
