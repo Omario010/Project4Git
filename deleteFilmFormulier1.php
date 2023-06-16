@@ -35,7 +35,7 @@
 		<link rel="stylesheet" href="styler.css">
 	</head>
 	<body>
-		<h1>delete film formulier 1</h1>
+		<h1>verwijderen film formulier 1</h1>
 		<form action="deleteFilmFormulier2.php" method="post">
 	
 			<label for = "filmIdvak">filmId: </label>
