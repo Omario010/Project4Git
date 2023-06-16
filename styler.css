@@ -325,3 +325,132 @@ a{
     margin-top:50px;
     font-size: x-large;
 }
+.linksanime{
+    border: 2px solid rgba(127, 216, 88, 0.85);
+    width:240px;
+    text-align: center;
+    padding: 39px;
+    background-color: rgba(127, 216, 88, 0.85);
+    margin-left: 790px;
+    margin-top:80px;
+    list-style-type: none;
+    font-size:larger;
+}
+.welkomanime{
+    text-align: center;
+    color:rgba(127, 216, 88, 0.85);
+    margin-top:50px;
+    font-size: x-large;
+}
+
+.formsearchanime{
+    border: 2px solid rgba(127, 216, 88, 0.85);
+    width:240px;
+    text-align: center;
+    padding: 39px;
+    background-color: rgba(127, 216, 88, 0.85);
+    margin-left: 790px;
+    margin-top:80px;
+    list-style-type: none;
+    font-size:larger;
+}
+
+.welkomanimesearch{
+    text-align: center;
+    color:rgba(127, 216, 88, 0.85);
+    margin-top:50px;
+    font-size: x-large;
+}
+
+.hpfilms{
+    border: 2px solid rgba(127, 216, 88, 0.85);
+    width:240px;
+    text-align: center;
+    padding: 39px;
+    background-color: rgba(127, 216, 88, 0.85);
+    margin-left: 790px;
+    margin-top:80px;
+    list-style-type: none;
+    font-size:larger;
+}
+
+.FilmsWelkom{
+    text-align: center;
+    color:rgba(127, 216, 88, 0.85);
+    margin-top:50px;
+    font-size: x-large;
+}
+
+.logofilmshp{
+    margin-top:-135px;
+}
+.FilmsCreateform{
+    border: 2px solid rgba(127, 216, 88, 0.85);
+    width:240px;
+    text-align: center;
+    padding: 39px;
+    background-color: rgba(127, 216, 88, 0.85);
+    margin-left: 790px;
+    margin-top:80px;
+    list-style-type: none;
+    font-size:larger;
+}
+.welkomFilmscreate{
+    text-align: center;
+    color:rgba(127, 216, 88, 0.85);
+    margin-top:50px;
+    font-size: x-large;
+}
+.Logocreatefilm{
+    margin-top:-135px;
+}
+.logoanime1{
+    margin-top:-265px
+}
+
+.formcreateanime{
+    border: 2px solid rgba(127, 216, 88, 0.85);
+    width:240px;
+    text-align: center;
+    padding: 39px;
+    background-color: rgba(127, 216, 88, 0.85);
+    margin-left: 790px;
+    margin-top:80px;
+    list-style-type: none;
+    font-size:larger;
+}
+
+.divwelkomcreateanime{
+    text-align: center;
+    color:rgba(127, 216, 88, 0.85);
+    margin-top:50px;
+    font-size: x-large;
+}
+
+.logoanimecreate{
+    margin-top:-265px
+}
+
+.formfilmupdate{
+    border: 2px solid rgba(127, 216, 88, 0.85);
+    width:240px;
+    text-align: center;
+    padding: 39px;
+    background-color: rgba(127, 216, 88, 0.85);
+    margin-left: 790px;
+    margin-top:80px;
+    list-style-type: none;
+    font-size:larger;
+}
+
+.welkomupdatefilms{
+    text-align: center;
+    color:rgba(127, 216, 88, 0.85);
+    margin-top:50px;
+    font-size: x-large;
+}
+
+.Logoupdatefilm1{
+    margin-top:-3005px
+}
+

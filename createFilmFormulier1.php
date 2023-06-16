@@ -8,7 +8,15 @@
 	<body>
 
 
+        <div class="Logocreatefilm">
+            <a href="home.php">
+            <img src=kikker(1).png>
+    </a>
+    </div>
+        <div class="welkomFilmscreate">
 		<h1>toevoegen films formulier 1</h1>
+        </div>
+        <div class="FilmsCreateform">
 		<form action="createFilmFormulier2.php" method="post">
 			
 		  
@@ -32,8 +40,9 @@
 			<br/>
 			<input type="submit">
 		</form>
+        </div>
 		<br>
-		<img src="images/list-2389219_1280.webp" alt="popcorn" style="width:300px;height:300px;">
+
 	</body>
 </html>
 

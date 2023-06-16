@@ -6,7 +6,18 @@
 		<link rel="stylesheet" href="styler.css">
 	</head>
 	<body>
-		<h1>update film formulier 1</h1>
+
+    <div class="Logoupdatefilm1">
+        <a href="home.php">
+            <img src=kikker(1).png>
+        </a>
+    </div>
+
+
+    <div class="welkomupdatefilms">
+		<h1>pas hier uw favoriete films aan!</h1>
+    </div>
+        <div class="formfilmupdate">
 		<form action="UpdateFilmFormulier2.php" method="post">
 			<label for = "filmIdvak">filmId: </label>
 			<input type = "text" name = "filmIdvak"></input>
@@ -28,5 +39,6 @@
 			<br/>
 			<input type="submit">
 		</form>
+        </div>
 	</body>
 </html>
