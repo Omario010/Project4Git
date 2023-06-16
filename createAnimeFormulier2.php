@@ -8,8 +8,7 @@
 <body
 <h1>create anime formulier 2</h1>
 <a href="index.php">
-<div class="logohoofd1">
-    <link rel="stylesheet" href="styler.css">
+<div class="logohoofd">
     <img src=kikker(1).png>
     </a>
 </div>

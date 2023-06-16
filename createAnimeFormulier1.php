@@ -9,7 +9,6 @@
 <h1>create anime formulier 1</h1>
 <a href="index.php">
 <div class="logohoofd1">
-    <link rel="stylesheet" href="styler.css">
     <img src=kikker(1).png>
     </a>
 </div>

@@ -21,7 +21,7 @@
 
 </div>
 
-    <div class="welkomhp">
+    <div class="welkom">
         <h1>Welcome to Frog Films</h1>
         <h2> Kies tussen:</h2>
         </div>
