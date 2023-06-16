@@ -31,7 +31,7 @@
 <ul>
 <li><a class="active" href="home.php">Home</a></li>
 </ul>
-		<title>create films formulier 2</title>
+		<title>toevoegen films formulier 2</title>
 		<link rel="stylesheet" href="styler.css">
 	</head>
 	<body>
