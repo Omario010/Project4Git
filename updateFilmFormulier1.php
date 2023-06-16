@@ -3,7 +3,7 @@
 	<!-- Jasper -->
 	<head>
 		<title>Update film Formulier1</title>
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="styler.css">
 	</head>
 	<body>
 		<h1>update film formulier 1</h1>
