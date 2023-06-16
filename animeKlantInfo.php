@@ -8,7 +8,6 @@ class animeKlantInfo extends Anime
     protected $Lijst;
     protected $GekekenDatum;
     protected $GekekenTijd;
-    // $naam en $postcode worden geërfd van Persoon
 
     // methoden - functies ------------------------------------------------
     // constructor
@@ -119,7 +118,7 @@ class animeKlantInfo extends Anime
         $gekekenTijd = $this->get_GekekenTijd();
         // statement maken
         $sql = $conn->prepare("
-									update AnimeKlantInfo
+									update animeKlantInfo
 									set gekekenDatum=:gekekenDatum, animeNaam=:animeNaam, gekekenTijd=:gekekenTijd
 									where Anime_id=:Anime_id
 								 ");
@@ -136,7 +135,7 @@ class animeKlantInfo extends Anime
         require "FilmsConnect.php";
         // statement maken
         $sql = $conn->prepare("
-									delete from AnimeKlantInfo
+									delete from animeKlantInfo
 									where Anime_id = :Anime_id
 								 ");
         // variabele in de statement zetten
