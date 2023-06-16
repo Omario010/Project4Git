@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>delete Anime klant info Formulier 1</title>
+    <title>Delete Anime klant info Formulier 1</title>
 </head>
 <body>
-<h1>delete student formulier 1</h1>
+<h1>Delete anime formulier 1</h1>
 <form action="deleteAnimeKlantInfoFormulier2.php" method="post">
     <label for="Anime_id">Anime_id:</label>
     <input type="text" id = "Anime_id" name="animeIdVak">
