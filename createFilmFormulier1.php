@@ -36,7 +36,7 @@
   <li><a class="active" href="home.php">Home</a></li>
 </ul>
 
-		<h1>create films formulier 1</h1>
+		<h1>toevoegen films formulier 1</h1>
 		<form action="createFilmFormulier2.php" method="post">
 			
 		  
