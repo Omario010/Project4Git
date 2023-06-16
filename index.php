@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="welkom">
-<h1>Welkom bij frog films</h1>
+<h1>Welkom bij Frog Films</h1>
     </div>
 
     <nav>

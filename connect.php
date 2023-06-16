@@ -1,6 +1,7 @@
 <?php
 // connect .php
 // maakt verbinding met de database 'inlog
+// Anjo Eijeriks
 $servername = "localhost";
 $dbname = "project4";
 $username = "omario010";
