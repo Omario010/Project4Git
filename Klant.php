@@ -1,7 +1,7 @@
 <?php
 
 // Klant
-// Anjo Eijeriks
+
 class Klant
 {
     // variabelen
