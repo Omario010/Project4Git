@@ -10,7 +10,7 @@
 
 			require "animeKlantInfo.php";					// nodig om object te maken
 			$Anime_id = $_POST["AnimeIdVak"];	// uitlezen vakje van deleteAnimeKlantForm1
-			$anime1 = new AnimeKlantInfo();				// object aanmaken
+			$anime1 = new animeKlantInfo();				// object aanmaken
         $anime1->searchAnimeKlantInfo($Anime_id);
         $anime1->afdrukkenAnimeKlantInfo();
 		?>

@@ -18,7 +18,7 @@ $GekekenTijd =  $_POST["GekekenDatumvak"];
 $GekekenDatum = $_POST["GekekenTijdvak"];
 
 // maken object ---------------------------------------------------
-$student1 = new AnimeKlantInfo($GekekenDatum, $AnimeNaam, $GekekenTijd); // maakt object
+$student1 = new animeKlantInfo($GekekenDatum, $AnimeNaam, $GekekenTijd); // maakt object
 $student1->createAnimeKlantInfo();		// zet het object in de tabel
 $student1->afdrukkenAnimeKlantInfo();	// drukt objectgegevens af
 ?>
