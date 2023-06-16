@@ -32,8 +32,9 @@ $student1->afdrukkenAnimeKlantInfo();	// drukt objectgegevens af
 
 $databaseHost = 'localhost';
 $databaseName = 'project4';
-$databaseUsername = 'root';
-$databasePassword = '';
+$databaseUsername = 'omario010';
+$databasePassword = 'ViezeAap1';
+
 
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
