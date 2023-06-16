@@ -3,10 +3,16 @@
 
 <head>
     <title>search anime formulier 2</title>
+    <link rel="stylesheet" href="styler.css">
 </head>
 <body>
 <h1>search anime formulier 2</h1>
-
+<a href="index.php">
+    <div class="logohoofd1">
+        <link rel="stylesheet" href="styler.css">
+        <img src=kikker(1).png>
+</a>
+</div>
 <?php
 
 require "animeKlantInfo.php";			// nodig om object te maken

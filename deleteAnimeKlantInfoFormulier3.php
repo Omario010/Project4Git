@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <title>delete anime formulier 3</title>
+    <link rel="stylesheet" href="styler.css">
 </head>
 <body>
 <h1>delete anime formulier 3</h1>
-
+<a href="index.php">
+    <div class="logohoofd1">
+        <link rel="stylesheet" href="styler.css">
+        <img src=kikker(1).png>
+</a>
+</div>
 <?php
 require "animeKlantInfo.php";
 
