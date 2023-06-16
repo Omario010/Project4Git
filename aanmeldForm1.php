@@ -32,7 +32,7 @@ Achternaam: <br/>
 </div>
 
 </form>
-<a href="index.php">Terug naar hoofdmenu </a> <br>
+
 
 </body>
 </html>

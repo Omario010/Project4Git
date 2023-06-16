@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 
 require "Klant.php";
 
-echo"<h1>Aanmeldformulier klant 2</h1>";
+//echo"<h1>Aanmeldformulier klant 2</h1>";
 
 //uitlezen array van aanmeldForm1.php
 $klantVoornaam=$_POST["voornaamvak"];
@@ -20,10 +20,23 @@ $klant1 = new Klant($klantVoornaam, $klantAchternaam);
 $klant1->aanmelden();
 
 //afdrukken object
-echo"Deze klant is aangemeld: <br/>";
+//echo"Deze klant is aangemeld: <br/>";
 $klant1->afdrukkenKlant();
 ?>
-<br/><br/><a href="index.php">Terug naar hoofdmenu.</a>
+
+    <div class="kikkerForm2">
+        <a href="index.php">
+        <img src="kikker(1).png">
+        </a>
+    </div>
+
+
+<div class="linkloginForm">
+    <br/><br/><a href="loginForm1.php">Log hier in!</a>
+</div>
+
+
+
 
 
 <html>
@@ -36,20 +49,20 @@ $klant1->afdrukkenKlant();
     <link rel="stylesheet" href="styler.css">
 </head>
 <body>
-<?php
-foreach($klanten as $klant){
-    echo "<tr>";
-    echo "<td>" . $klant->getKlantVoorNaam() . "</td>";
-    echo "<td>" . $klant->getKlantAchternaam()  . "</td>";
-    echo "</tr>";
-}
-echo "</table>";
-?>
-<table class="content-table">
-    <tr>
-        <th>Voornaam:</th>
-        <th>Achternaam:</th>
-    </tr>
-</table>
+
+<div class="present">
+    <div class="lid">
+        <span></span>
+    </div>
+    <div class="promo">
+        <h2>Je bent aangemeld!</h2>
+        <p>Frog Films</p>
+    </div>
+    <div class="box">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
 </body>
 </html>

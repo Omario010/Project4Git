@@ -24,41 +24,62 @@ error_reporting(E_ALL);
 
  </div>
 <!-- <form> hier moet staan de form action enzo  -->
-<div class="welkom">
+<div class="welkomlogin">
 <h1>Login hier</h1>
 </div>
-<form method="POST"> 
-  <label for="VoorNaam">Voornaam:</label><br> <!-- veranderd naar VoorNaam was eerst vname-->
-  <input type="text" id="fname" name="fname"><br>
+<div class="formlogin">
+
+<form method="POST">
+  <label for="voornaam">Voornaam:</label><br> <!-- veranderd naar VoorNaam was eerst vname-->
+  <input type="text" id="voornaam" name="voornaam"><br>
 <br>
-  <label for="lname">Achternaam:</label><br>
-  <input type="text" id="lname" name="lname"> 
+  <label for="achternaam">Achternaam:</label><br>
+  <input type="text" id="achternaam" name="achternaam">
 <br>
 <br>
   <input type="submit" value="Submit">
 </form>
+</div>
 
 </body>
 </html>
 
-<?php 
-session_start();
+<?php
 
-include "connect.php";
-if(isset($_POST["login"])) {
-  if($_POST["VoorNaam"]=="" or $_POST["Achternaam"]==""){
-    echo"<center><h1>Voornaam of Achternaam mag niet leeg zijn</h1></center>";
-  }else{
-    $VoorNaam=trim($_POST["voornaam"]);
-    $Achternaam=strip_tags(trim($_POST["achternaam"]));
-    $query=$db->prepare("SELECT * FROM login WHERE VoorNaam=? AND Achternaam=?");
-    $query->execute(array($VoorNaam,$Achternaam));
-    $control=$query->fetch(PDO::FETCH_OBJ);
-    if($control>0) {
-      $_SESSION["VoorNaam"]=$VoorNaam;
-      header("hoofdpagina.php");
-    }
-    echo "<center><h1>Verkeerde naam of achternaam!</h1></center>";
-  }
+// Database credentials
+$dbHost = 'localhost';
+$dbName = 'project4';
+$dbUser = 'omario010';
+$dbPass = 'ViezeAap1!';
+
+// Establish database connection
+try {
+    $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e)
+{
+    die("Database connection failed: " . $e->getMessage());
 }
+
+// Handle form submission
+if ($_SERVER['REQUEST_METHOD'] === 'POST')
+        {
+    $voornaam = $_POST['voornaam'];
+    $achternaam = $_POST['achternaam'];
+
+    // Check if the entered credentials are valid
+    $stmt = $db->prepare("SELECT * FROM klanten WHERE VoorNaam = :voornaam AND Achternaam = :achternaam");
+    $stmt->bindParam(':voornaam', $voornaam);
+    $stmt->bindParam(':achternaam', $achternaam);
+    $stmt->execute();
+
+    if ($stmt->rowCount() > 0) {
+        // Successful login
+        header('Location: hoofdpagina.php');
+    } else {
+        // Invalid credentials
+        echo "Invalid username or password.";
+    }
+}
+
 

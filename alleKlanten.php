@@ -1,3 +1,11 @@
+<div class="kikker1">
+    <a href="index.php">
+        <img src="kikker(1).png">
+    </a>
+</div>
+
+
+
 <?php
 // alleklanten.php
 // omar abidi
@@ -5,7 +13,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-echo '<h1>.</hl>';
+
 require "Klant.php";
 // nodig om object te maken
 
@@ -26,10 +34,11 @@ foreach($klanten as $klant){
 echo "</table>";
 ?>
 
-<div class="kikker1">
-<a href="index.php">
-<img src="kikker(1).png">
-</a>
-</div>
+<!--<div class="kikker1">-->
+<!--<a href="index.php">-->
+<!--<img src="kikker(1).png">-->
+<!--</a>-->
+<!--</div>-->
+    <link rel="stylesheet" href="styler.css">
 
 
