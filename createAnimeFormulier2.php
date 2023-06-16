@@ -30,25 +30,25 @@ $student1->afdrukkenAnimeKlantInfo();	// drukt objectgegevens af
 <?php
 
 
-$databaseHost = 'localhost';   //your db host
-$databaseName = 'project4';  //your db name
-$databaseUsername = 'root';    //your db username
-$databasePassword = '';//   db password
+$databaseHost = 'localhost';
+$databaseName = 'project4';
+$databaseUsername = 'root';
+$databasePassword = '';//
 
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
-$id = $_GET['id'];
+$id = $_GET['anime_id'];
 
 
 
-$sql="select * from competitors where (id='$id');";//  check id is already copied
+$sql="select * from competitors where (id='$Anime_id');";//  check id is already copied
 
 $res=mysqli_query($mysqli,$sql);
 
 if (mysqli_num_rows($res) > 0) {
     // output data of each row
     $row = mysqli_fetch_assoc($res);
-    if($id==$row['id'])
+    if($Anime_id==$row['anime_id'])
     {
         echo "Already copied"; //error message if already copied
 
@@ -59,7 +59,7 @@ if (mysqli_num_rows($res) > 0) {
 
 
     $query=mysqli_query($mysqli,"INSERT INTO animeKlantInfo
-SELECT * FROM  Anime WHERE id =$id");// copy one table to another
+SELECT * FROM  Anime WHERE anime_id =$Anime_id");// copy one table to another
 
     echo "Successfully copied";
 
