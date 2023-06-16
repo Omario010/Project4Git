@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <!--Jasper Kroon-->
     <head>
         <title>Watch</title>
@@ -13,7 +13,7 @@
        
 
 
-        <p>films<p>
+        <p>films</p>
         <a href="createFilmFormulier1.php">    create film</a><br/>
         <a href="readFilmFormulier.php">       read film </a></br>
         <a href="updateFilmFormulier1.php">    update film </a><br/>
