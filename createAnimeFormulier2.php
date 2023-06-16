@@ -8,7 +8,7 @@
 <h1>create anime formulier 2</h1>
 
 <?php
-require "AnimeKlantInfo.php";			// nodig om object te maken
+require "animeKlantInfo.php";			// nodig om object te maken
 require "FilmsConnect.php";	// verbinding maken database
 
 // uitlezen vakjes van createStudentForm1 -------------------------

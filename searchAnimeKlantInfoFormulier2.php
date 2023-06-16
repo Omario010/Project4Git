@@ -9,7 +9,7 @@
 
 <?php
 
-require "AnimeKlantInfo.php";			// nodig om object te maken
+require "animeKlantInfo.php";			// nodig om object te maken
 require "FilmsConnect.php";	// verbinding maken database
 
 // uitlezen vakje van searchStudentForm1 -------------------------

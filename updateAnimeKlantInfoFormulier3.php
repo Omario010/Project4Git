@@ -8,7 +8,7 @@
 <h1>update anime formulier 3</h1>
 
 <?php
-require "AnimeKlantInfo.php";
+require "animeKlantInfo.php";
 
 // gegevens uit de array in variabelen stoppen
 $Anime_id = $_POST["AnimeIdVak"];
@@ -17,7 +17,7 @@ $GekekenDatum = $_POST["GekekenDatumVak"];
 $GekekenTijd = $_POST["GekekenTijdVak"];
 
 // maken object ---------------------------------------------------
-$anime1 = new AnimeKlantInfo($Anime_id, $GekekenDatum, $GekekenTijd); // maakt object
+$anime1 = new animeKlantInfo($Anime_id, $GekekenDatum, $GekekenTijd); // maakt object
 $anime1->updateAnimeKlantInfo($Anime_id);		           // vervangt de tabelgegevens voor objectgegevens
 echo "Dit zijn de gewijzigde gegevens: <br/>";
 echo $Anime_id."<br/>";

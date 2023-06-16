@@ -2,7 +2,7 @@
 
 require "Anime.php";
 
-class AnimeKlantInfo extends Anime
+class animeKlantInfo extends Anime
 {
     // properties - eigenschappen -----------------------------------------
     protected $Lijst;
@@ -96,16 +96,16 @@ class AnimeKlantInfo extends Anime
         // statement maken
         $sql = $conn->prepare("
 									select Anime_id, GekekenDatum, AnimeNaam, GekekenTijd 
-									from AnimeKlantInfo  
+									from animeKlantInfo  
 								 ");
         $sql->execute();
-        foreach ($sql as $AnimeKlantInfo) {
+        foreach ($sql as $animeKlantInfo) {
             // gegevens uit de array in het object stoppen
             // en gelijk afdrukken
-            echo $AnimeKlantInfo["Anime_id"] . " - ";        // geen eigenschap van object
-            echo $this->AnimeNaam = $AnimeKlantInfo["AnimeNaam"] . " - ";
-            echo $this->GekekenDatum = $AnimeKlantInfo["GekekenDatum"] . " - ";
-            echo $this->GekekenTijd = $AnimeKlantInfo["GekekenTijd"] . "<br/>";
+            echo $animeKlantInfo["Anime_id"] . " - ";        // geen eigenschap van object
+            echo $this->AnimeNaam = $animeKlantInfo["AnimeNaam"] . " - ";
+            echo $this->GekekenDatum = $animeKlantInfo["GekekenDatum"] . " - ";
+            echo $this->GekekenTijd = $animeKlantInfo["GekekenTijd"] . "<br/>";
         }
     }
 
@@ -151,7 +151,7 @@ class AnimeKlantInfo extends Anime
         // statement maken
         $sql = $conn->prepare("
 									select Anime_id, opleiding, AnimeNaam, GekekenTijd
-									from AnimeKlantInfo
+									from animeKlantInfo
 									where Anime_id = :Anime_id			
 								 ");
         // variabele in de stament zetten
@@ -159,11 +159,11 @@ class AnimeKlantInfo extends Anime
         $sql->execute();
 
         // gegevens uit de array in het object stoppen
-        foreach ($sql as $AnimeKlantInfo) {
+        foreach ($sql as $animeKlantInfo) {
             //echo $animeklantinfo["anime_id"]. "<br/>";		// geen eigenschap van object
-            $this->AnimeNaam = $AnimeKlantInfo["AnimeNaam"];
-            $this->GekekenDatum = $AnimeKlantInfo["GekekenDatum"];
-            $this->GekekenTijd = $AnimeKlantInfo["GekekenTijd"];
+            $this->AnimeNaam = $animeKlantInfo["AnimeNaam"];
+            $this->GekekenDatum = $animeKlantInfo["GekekenDatum"];
+            $this->GekekenTijd = $animeKlantInfo["GekekenTijd"];
         }
     }
 }

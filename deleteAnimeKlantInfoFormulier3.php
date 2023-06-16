@@ -7,7 +7,7 @@
 <h1>delete anime formulier 3</h1>
 
 <?php
-require "AnimeKlantInfo.php";
+require "animeKlantInfo.php";
 
 $Anime_id = $_POST["animeIdVak"];
 $verwijderen = $_POST["verwijderBox"];
@@ -15,7 +15,7 @@ $verwijderen = $_POST["verwijderBox"];
 if ($verwijderen=="ja")
 {
     echo "De student is verwijderd <br/>";
-    $student1 =  new AnimeKlantInfo();
+    $student1 =  new animeKlantInfo();
     $student1->deleteAnimeKlantInfo($Anime_id);
 }
 else
