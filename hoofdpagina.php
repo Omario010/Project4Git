@@ -18,6 +18,8 @@ if(!isset($_SESSION["VoorNaam"])){
             Welkom<?php echo $_SESSION["VoorNaam"];?><br>
             Login sucess<br><br>
 
-        </h1></center>  
+        </h1></center>
+        <h2>Anime</h2>
+        <a href="Project4Menu.php">	Anime</a><br/>
 </body>
 </html>
