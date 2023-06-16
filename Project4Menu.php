@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styler.css">
     <title>Anime menu</title>
 </head>
 <body>
