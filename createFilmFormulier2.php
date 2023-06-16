@@ -32,7 +32,7 @@
 <li><a class="active" href="home.php">Home</a></li>
 </ul>
 		<title>create films formulier 2</title>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<h1>create films formulier 2</h1>
