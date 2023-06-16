@@ -3,7 +3,7 @@
 	<!-- Jasper -->
 	<head>
 		<title>createFilmsFormulier1</title>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 	<style>
