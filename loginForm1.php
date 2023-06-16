@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $stmt->bindParam(':voornaam', $voornaam);
     $stmt->bindParam(':achternaam', $achternaam);
     $stmt->execute();
-
+//    password_verify($achternaam, $opgehaaldeww)
     if ($stmt->rowCount() > 0) {
         // Successful login
         header('Location: hoofdpagina.php');
