@@ -3,7 +3,7 @@
     <!--Jasper Kroon-->
     <head>
         <title>Watch</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styler.css">
     </head>
     
 
