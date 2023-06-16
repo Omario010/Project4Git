@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="styler.css">
     </head>
     <body>
-    <h1>delete film formulier 3</h1>
+    <h1>verwijderen film formulier 3</h1>
 
     <?php
     require "films.php";
