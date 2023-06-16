@@ -38,13 +38,13 @@ class Klant
         // gegevens uit het object in variabelen zetten
         $klantVoornaam = $this->getKlantVoornaam();
         $klantAchternaam = $this->getKlantAchternaam();
-        $achternaamHash = password_hash($klantAchternaam, PASSWORD_DEFAULT);
+
 
         $sql = $conn->prepare("INSERT INTO klanten(VoorNaam, Achternaam) VALUES (:klantvoornaam, :klantachternaam)");
 
         // variabelen in the statement zetten
         $sql->bindParam(":klantvoornaam", $klantVoornaam);
-        $sql->bindParam(":klantachternaam", $achternaamHash);
+        $sql->bindParam(":klantachternaam", $klantAchternaam);
         $sql->execute();
 
         // melding geven

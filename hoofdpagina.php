@@ -26,20 +26,23 @@
         <h2> Kies tussen:</h2>
         </div>
         <div class="films1">
-            <a href="Project4Menu.php">
+            <a href="home.php">
             <p>Films:</p>
             </a>
             </div>
+
              <div class="anime1">
+                 <a href="Project4Menu.php">
             <p>Anime:</p>
+                 </a>
           </div>
              <div class="iframefilms">
 
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/8EPJiFfWRfw" title="SatyaPrem Ki Katha|Official Trailer|Kartik|Kiara|Sameer V|Sajid Nadiadwala| Namah Pictures|29th June" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="450" height="260" src="https://www.youtube.com/embed/8EPJiFfWRfw" title="SatyaPrem Ki Katha|Official Trailer|Kartik|Kiara|Sameer V|Sajid Nadiadwala| Namah Pictures|29th June" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
              </div>
                 <div class="iframeanime">
 
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/jBetoIlnDIM" title="TVアニメ「ヴィンランド・サガ」SEASON 2 ファイナルトレーラー / TV Anime 『VINLAND SAGA SEASON 2』 FINAL TRAILER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="450" height=260" src="https://www.youtube.com/embed/jBetoIlnDIM" title="TVアニメ「ヴィンランド・サガ」SEASON 2 ファイナルトレーラー / TV Anime 『VINLAND SAGA SEASON 2』 FINAL TRAILER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
 </body>
