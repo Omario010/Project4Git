@@ -58,8 +58,8 @@ if (mysqli_num_rows($res) > 0) {
 
 
 
-    $query=mysqli_query($mysqli,"INSERT INTO animeKlantInfo
-SELECT * FROM  Anime WHERE anime_id =$Anime_id");// copy one table to another
+    $query=mysqli_query($mysqli,"INSERT INTO klant
+SELECT * FROM  anime WHERE Anime_id =$Anime_id");// copy one table to another
 
     echo "Successfully copied";
 
