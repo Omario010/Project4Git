@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<h1>update film formulier 2</h1>
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="styler.css">
 
 		<?php
 			require "Film.php";
