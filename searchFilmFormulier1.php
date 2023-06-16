@@ -35,7 +35,7 @@
 		<link rel="stylesheet" href="styler.css">
 	</head>
 	<body>
-		<h1>create films formulier 1</h1>
+		<h1>zoeken films formulier 1</h1>
 		<form action="searchFilmFormulier2.php" method="post">
 			<label for = "filmId">filmId: </label>
 			<input type = "text" name = "filmIdvak"></input>
