@@ -17,7 +17,7 @@ $username, $password
 );
 // echo "Connectie gelukt <br/>";
 }
-catch (PDOExeption $e)
+catch (PDOException $e)
 {
 echo "Connectie mislukt <br/>".$e->getMessage ();
 }
